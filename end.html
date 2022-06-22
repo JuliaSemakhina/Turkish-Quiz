@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The result</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+<div class="loader">Loading</div>
+    <section class=" main">
+        <img src="img/kitty.jpg" class="body_img" alt="abstract background">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore">0</h1>
+            <form class="end-form-container">
+                <h2 id="end-text">Введите имя, чтобы сохранить результат!</h2>
+                <h2 id="result-text"></h2>
+                <img id="result-photo" src="" alt="">
+                <input type="text" name="name" id="username" placeholder="Введите имя">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Сохранить</button>
+            </form>
+            <a href="game.html" class="btn">Играть Снова</a>
+            <a href="index.html" class="btn">Домой<i class="fas fa-home"></i></a>
+        </div>
+    </section>
+    <script defer src="end.js" defer></script>
+</body>
+
+</html>
